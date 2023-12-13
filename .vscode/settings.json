@@ -1,6 +1,9 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
   "prettier.printWidth": 120,
   "prettier.semi": false,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "css.lint.unknownAtRules": "ignore"
 }
