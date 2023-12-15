@@ -20,6 +20,7 @@ import CustomConnectionLine from './customNodes/CustomConnectionLine'
 import 'reactflow/dist/style.css'
 import './customNodes/uiFlowNodeStyle.css'
 import FormatButton from './FormatButton'
+import SideBar from './SideBar'
 
 const connectionLineStyle = {
   strokeWidth: 3,
@@ -99,6 +100,9 @@ export const FlowGuiEditor = () => {
       connectionLineStyle={connectionLineStyle}
     >
       <Background />
+      <Panel position="top-left">
+        <SideBar />
+      </Panel>
       <Panel position="bottom-left">
         <FormatButton nodes={nodes} edges={edges} setNodes={setNodes} setEdges={setEdges} />
       </Panel>
